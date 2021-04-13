@@ -1,0 +1,10 @@
+.profile-pic {
+    background-size: cover;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    padding-top: 80%;
+}
+
+.btn-outline-success {
+    color: #6c757d;
+}
