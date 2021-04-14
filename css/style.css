@@ -8,3 +8,13 @@
 .btn-outline-success {
     color: #6c757d;
 }
+
+.ff-slabo {
+    font-family: 'Slabo 27px', serif;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
