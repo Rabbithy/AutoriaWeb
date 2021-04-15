@@ -16,3 +16,19 @@
 .footer {
     width: 100%;
 }
+
+.comment-profile-pic {
+    background-image: url("https://evorastudio.com.br/wp-content/uploads/2018/10/LE1A0141-200x300.jpg");
+    height: 64px;
+    width: 64px;
+    background-size: cover;
+    border-radius: 6px;
+}
+
+.navbar-dark {
+    background-color: #1a1c21;
+}
+
+.navbar-dark.border-bottom {
+    border-color: #07080a !important;
+}
