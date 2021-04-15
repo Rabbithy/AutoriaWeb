@@ -8,14 +8,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Slabo+27px&display=swap" rel="stylesheet"> 
     </head>
-    <body>
-        <header class="border-bottom shadow-sm p-2 navbar-dark">
+    <body style="background-color: #fcfcfc">
+        <header class="border-bottom shadow-sm p-2 navbar-dark" style="background-color: #ffffff;">
             <div class="container-fluid">
                 <div class="row">
                     <ul class="col nav">
-                        <il class="nav-item active"><a href="home.html" class="nav-link"><i class="bi bi-house-fill" style="font-size: 1.4rem;"></i> Home</a></il>
+                        <il class="nav-item active">
+                            <a href="home.html">
+                                <img src="images/logo-nav.png" width="64px">
+                            </a>
+                        </il>
                         <il><a href="#" class="nav-link">About</a></il>
-                        <il><a href="#" class="nav-link">Login</a></il>
                     </ul>
                     <div class="col-4 mx-4">
                         <div class="row">
@@ -28,8 +31,8 @@
                         </div>
                     </div>
                     <div class="col-auto text-end">
-                        <button class="btn btn-primary">Logout</button>
-                        <button class="btn btn-outline-primary">Register</button>
+                        <a href="login.html" class="btn btn-primary">Entrar</a>
+                        <a class="btn btn-outline-primary">Cadastre-se</a>
                     </div>
                 </div>
             </div>
@@ -76,8 +79,36 @@
                             as screen readers.
                         </p>
                     </div>
-                    <div class="mt-4 border-bottom p-2">
+                    <div class="mt-4 border-bottom p-2 text-end">
                         <i class="bi bi-chat-right-dots fs-4"></i> 243 Comentarios.
+                    </div>
+
+                    <div class="d-flex flex-column px-4 pt-4">
+                        
+                        <div class="card mb-1">
+                            <div class="p-2 border-bottom d-flex bg-light">
+                                <div class="comment-profile-pic">
+                                </div>
+                                <div class="ms-2">
+                                    <a href="#">Anonimo</a>
+                                    <p class="text-muted m-0">
+                                        data: hoje.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                Comentario...
+                            </div>
+                            <div class="mt-2 border-top text-end px-4 py-1 bg-light">
+                                <a href="#" class="me-1" style="text-decoration: none;">
+                                    Like <i class="bi bi-hand-thumbs-up fs-5"></i>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    Deslike <i class="bi bi-hand-thumbs-down fs-5"></i>
+                                </a>
+                            </div> 
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -86,7 +117,7 @@
         <footer class="footer bg-light py-2 border-top">
             <div class="container">
                 <p class="text-muted">
-                    Site footer.
+                    2021 - @Todos os direitos reservados.
                 </p>
             </div>
         </footer>
