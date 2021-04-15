@@ -5,6 +5,15 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="css/style.css">
         <!--<link rel="stylesheet" href="css/style-dark.css">-->
+        <style>
+            .myitem {
+                height: 360px;
+                background-size: cover;
+                background-color: #333333;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        </style>
     </head>
     <body>
         <header class="border-bottom shadow-sm p-2 navbar-dark">
@@ -16,7 +25,6 @@
                                 <img src="images/logo-nav.png" width="64px">
                             </a>
                         </il>
-                        <!--<il class="nav-item active"><a href="#" class="nav-link"><i class="bi bi-house-fill" style="font-size: 1.4rem;"></i> Home</a></il>-->
                         <il><a href="#" class="nav-link">About</a></il>
                     </ul>
                     <div class="col-4 mx-4">
@@ -38,6 +46,44 @@
         </header>
         
         <div class="container-fluid">
+            
+            <div class="row p-0">
+                    <div id="carouselControls" class="carousel slide px-0" data-bs-ride="carousel">
+                        <div class="carousel-inner text-light">
+                            <div 
+                                class="carousel-item myitem active text-bottom" 
+                                style="background-image: url('https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2019/09/Harry-Potter-livro.jpg');">
+                                <div class="h5 text-center p-3" style="background-color: rgba(0, 0, 0, 0.644)">
+                                    O que achei do livro: Harry potter e a pedra filosofal.
+                                </div>
+                            </div>
+                            <div 
+                                class="carousel-item myitem" 
+                                style="background-image: url('http://contudoeentretanto.com.br/wp-content/uploads/2017/05/ITaCOISA1.jpg');">
+                                <div class="h5 text-center p-3" style="background-color: rgba(0, 0, 0, 0.644)">
+                                    Leitura leve: It, a coisa.
+                                </div>
+                            </div>
+                            <div 
+                                class="carousel-item myitem" 
+                                style="background-image: url('https://i.ytimg.com/vi/tzCwylEPAvc/maxresdefault.jpg');">
+                                <div class="h5 text-center p-3" style="background-color: rgba(0, 0, 0, 0.644)">
+                                    Dia de unboxing: O Hobbit, edição espeical.
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+            </div>
+            
             <div class="row">
                  
                 <!--Author info-->
@@ -81,7 +127,41 @@
                 </div>
 
                 <!--Cards-->
-                <div class="col-lg-8 col-sm-12 pt-4" style="background-color: #fcfcfc">
+                <div class="col-lg-8 col-sm-12" style="background-color: #fcfcfc">
+
+                    <div class="card col-lg-9 mx-auto shadow-sm my-4 row">
+                        <div class="container">
+                            <div class="card-header p-0 row">
+                                <div class="col-auto p-2">
+                                    <h3>
+                                        Disable text wrapping
+                                    </h3>
+                                    <div class="text-secondary">
+                                        Data de publicação: Hoje
+                                    </div>
+                                </div>
+                                <div class="col text-end p-0">
+                                    <i class="bi bi-bookmark-heart-fill h4" style="color: rgb(255, 74, 74)"></i>
+                                </div>
+                            </div>
+                            <div class="card-body border-bottom row p-1">
+                                <p>
+                                    If you don’t want the button text to wrap, you can add the .text-nowrap class to
+                                    the button. In Sass, you can set $btn-white-space: nowrap to disable text wrapping
+                                    for each button.Button tagsThe .btn classes are designed to be used with the button element.
+                                    However, you can also use these classes on a or input elements (though some browsers may
+                                    apply a slightly different rendering).When using button classes on a elements that are
+                                    used to trigger in-page functionality (like collapsing content), rather than linking
+                                    to new pages or sections within the current page, these links should be given a
+                                    role="button" to appropriately convey their purpose to assistive technologies such
+                                    as screen readers.
+                                </p>
+                            </div>
+                            <div class="py-2 px-2 row justify-content-end">
+                                <a href="post.html" class="btn btn-outline-success col col-auto">Ler mais <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>                        
+                    </div>
                     
                     <div class="card col-lg-9 mx-auto shadow-sm mb-4 row">
                         <div class="container">
@@ -116,187 +196,154 @@
                             </div>
                         </div>                        
                     </div>
+
+                    <div class="card col-lg-9 mx-auto shadow-sm mb-4 row">
+                        <div class="container">
+                            <div class="card-header p-0 row">
+                                <div class="col-auto p-2">
+                                    <h3>
+                                        Disable text wrapping
+                                    </h3>
+                                    <div class="text-secondary">
+                                        Data de publicação: Hoje
+                                    </div>
+                                </div>
+                                <div class="col text-end p-0">
+                                    <i class="bi bi-bookmark-heart-fill h4" style="color: rgb(255, 74, 74)"></i>
+                                </div>
+                            </div>
+                            <div class="card-body border-bottom row p-1">
+                                <p>
+                                    If you don’t want the button text to wrap, you can add the .text-nowrap class to
+                                    the button. In Sass, you can set $btn-white-space: nowrap to disable text wrapping
+                                    for each button.Button tagsThe .btn classes are designed to be used with the button element.
+                                    However, you can also use these classes on a or input elements (though some browsers may
+                                    apply a slightly different rendering).When using button classes on a elements that are
+                                    used to trigger in-page functionality (like collapsing content), rather than linking
+                                    to new pages or sections within the current page, these links should be given a
+                                    role="button" to appropriately convey their purpose to assistive technologies such
+                                    as screen readers.
+                                </p>
+                            </div>
+                            <div class="py-2 px-2 row justify-content-end">
+                                <a href="post.html" class="btn btn-outline-success col col-auto">Ler mais <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="card col-lg-9 mx-auto shadow-sm mb-4 row">
+                        <div class="container">
+                            <div class="card-header p-0 row">
+                                <div class="col-auto p-2">
+                                    <h3>
+                                        Disable text wrapping
+                                    </h3>
+                                    <div class="text-secondary">
+                                        Data de publicação: Hoje
+                                    </div>
+                                </div>
+                                <div class="col text-end p-0">
+                                    <i class="bi bi-bookmark-heart-fill h4" style="color: rgb(255, 74, 74)"></i>
+                                </div>
+                            </div>
+                            <div class="card-body border-bottom row p-1">
+                                <p>
+                                    If you don’t want the button text to wrap, you can add the .text-nowrap class to
+                                    the button. In Sass, you can set $btn-white-space: nowrap to disable text wrapping
+                                    for each button.Button tagsThe .btn classes are designed to be used with the button element.
+                                    However, you can also use these classes on a or input elements (though some browsers may
+                                    apply a slightly different rendering).When using button classes on a elements that are
+                                    used to trigger in-page functionality (like collapsing content), rather than linking
+                                    to new pages or sections within the current page, these links should be given a
+                                    role="button" to appropriately convey their purpose to assistive technologies such
+                                    as screen readers.
+                                </p>
+                            </div>
+                            <div class="py-2 px-2 row justify-content-end">
+                                <a href="post.html" class="btn btn-outline-success col col-auto">Ler mais <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="card col-lg-9 mx-auto shadow-sm mb-4 row">
+                        <div class="container">
+                            <div class="card-header p-0 row">
+                                <div class="col-auto p-2">
+                                    <h3>
+                                        Disable text wrapping
+                                    </h3>
+                                    <div class="text-secondary">
+                                        Data de publicação: Hoje
+                                    </div>
+                                </div>
+                                <div class="col text-end p-0">
+                                    <i class="bi bi-bookmark-heart-fill h4" style="color: rgb(255, 74, 74)"></i>
+                                </div>
+                            </div>
+                            <div class="card-body border-bottom row p-1">
+                                <p>
+                                    If you don’t want the button text to wrap, you can add the .text-nowrap class to
+                                    the button. In Sass, you can set $btn-white-space: nowrap to disable text wrapping
+                                    for each button.Button tagsThe .btn classes are designed to be used with the button element.
+                                    However, you can also use these classes on a or input elements (though some browsers may
+                                    apply a slightly different rendering).When using button classes on a elements that are
+                                    used to trigger in-page functionality (like collapsing content), rather than linking
+                                    to new pages or sections within the current page, these links should be given a
+                                    role="button" to appropriately convey their purpose to assistive technologies such
+                                    as screen readers.
+                                </p>
+                            </div>
+                            <div class="py-2 px-2 row justify-content-end">
+                                <a href="post.html" class="btn btn-outline-success col col-auto">Ler mais <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="card col-lg-9 mx-auto shadow-sm mb-4 row">
+                        <div class="container">
+                            <div class="card-header p-0 row">
+                                <div class="col-auto p-2">
+                                    <h3>
+                                        Disable text wrapping
+                                    </h3>
+                                    <div class="text-secondary">
+                                        Data de publicação: Hoje
+                                    </div>
+                                </div>
+                                <div class="col text-end p-0">
+                                    <i class="bi bi-bookmark-heart-fill h4" style="color: rgb(255, 74, 74)"></i>
+                                </div>
+                            </div>
+                            <div class="card-body border-bottom row p-1">
+                                <p>
+                                    If you don’t want the button text to wrap, you can add the .text-nowrap class to
+                                    the button. In Sass, you can set $btn-white-space: nowrap to disable text wrapping
+                                    for each button.Button tagsThe .btn classes are designed to be used with the button element.
+                                    However, you can also use these classes on a or input elements (though some browsers may
+                                    apply a slightly different rendering).When using button classes on a elements that are
+                                    used to trigger in-page functionality (like collapsing content), rather than linking
+                                    to new pages or sections within the current page, these links should be given a
+                                    role="button" to appropriately convey their purpose to assistive technologies such
+                                    as screen readers.
+                                </p>
+                            </div>
+                            <div class="py-2 px-2 row justify-content-end">
+                                <a href="post.html" class="btn btn-outline-success col col-auto">Ler mais <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>                        
+                    </div>
                     
-                    <div class="card col-lg-9 mx-auto shadow-sm mb-4 row">
-                        <div class="container">
-                            <div class="card-header p-0 row">
-                                <div class="col-auto p-2">
-                                    <h3>
-                                        Disable text wrapping
-                                    </h3>
-                                    <div class="text-secondary">
-                                        Data de publicação: Hoje
-                                    </div>
-                                </div>
-                                <div class="col text-end p-0">
-                                    <i class="bi bi-bookmark-heart-fill h4" style="color: rgb(255, 74, 74)"></i>
-                                </div>
-                            </div>
-                            <div class="card-body border-bottom row p-1">
-                                <p>
-                                    If you don’t want the button text to wrap, you can add the .text-nowrap class to
-                                    the button. In Sass, you can set $btn-white-space: nowrap to disable text wrapping
-                                    for each button.Button tagsThe .btn classes are designed to be used with the button element.
-                                    However, you can also use these classes on a or input elements (though some browsers may
-                                    apply a slightly different rendering).When using button classes on a elements that are
-                                    used to trigger in-page functionality (like collapsing content), rather than linking
-                                    to new pages or sections within the current page, these links should be given a
-                                    role="button" to appropriately convey their purpose to assistive technologies such
-                                    as screen readers.
-                                </p>
-                            </div>
-                            <div class="py-2 px-2 row justify-content-end">
-                                <a href="post.html" class="btn btn-outline-success col col-auto">Ler mais <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="card col-lg-9 mx-auto shadow-sm mb-4 row">
-                        <div class="container">
-                            <div class="card-header p-0 row">
-                                <div class="col-auto p-2">
-                                    <h3>
-                                        Disable text wrapping
-                                    </h3>
-                                    <div class="text-secondary">
-                                        Data de publicação: Hoje
-                                    </div>
-                                </div>
-                                <div class="col text-end p-0">
-                                    <i class="bi bi-bookmark-heart-fill h4" style="color: rgb(255, 74, 74)"></i>
-                                </div>
-                            </div>
-                            <div class="card-body border-bottom row p-1">
-                                <p>
-                                    If you don’t want the button text to wrap, you can add the .text-nowrap class to
-                                    the button. In Sass, you can set $btn-white-space: nowrap to disable text wrapping
-                                    for each button.Button tagsThe .btn classes are designed to be used with the button element.
-                                    However, you can also use these classes on a or input elements (though some browsers may
-                                    apply a slightly different rendering).When using button classes on a elements that are
-                                    used to trigger in-page functionality (like collapsing content), rather than linking
-                                    to new pages or sections within the current page, these links should be given a
-                                    role="button" to appropriately convey their purpose to assistive technologies such
-                                    as screen readers.
-                                </p>
-                            </div>
-                            <div class="py-2 px-2 row justify-content-end">
-                                <a href="post.html" class="btn btn-outline-success col col-auto">Ler mais <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="card col-lg-9 mx-auto shadow-sm mb-4 row">
-                        <div class="container">
-                            <div class="card-header p-0 row">
-                                <div class="col-auto p-2">
-                                    <h3>
-                                        Disable text wrapping
-                                    </h3>
-                                    <div class="text-secondary">
-                                        Data de publicação: Hoje
-                                    </div>
-                                </div>
-                                <div class="col text-end p-0">
-                                    <i class="bi bi-bookmark-heart-fill h4" style="color: rgb(255, 74, 74)"></i>
-                                </div>
-                            </div>
-                            <div class="card-body border-bottom row p-1">
-                                <p>
-                                    If you don’t want the button text to wrap, you can add the .text-nowrap class to
-                                    the button. In Sass, you can set $btn-white-space: nowrap to disable text wrapping
-                                    for each button.Button tagsThe .btn classes are designed to be used with the button element.
-                                    However, you can also use these classes on a or input elements (though some browsers may
-                                    apply a slightly different rendering).When using button classes on a elements that are
-                                    used to trigger in-page functionality (like collapsing content), rather than linking
-                                    to new pages or sections within the current page, these links should be given a
-                                    role="button" to appropriately convey their purpose to assistive technologies such
-                                    as screen readers.
-                                </p>
-                            </div>
-                            <div class="py-2 px-2 row justify-content-end">
-                                <a href="post.html" class="btn btn-outline-success col col-auto">Ler mais <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="card col-lg-9 mx-auto shadow-sm mb-4 row">
-                        <div class="container">
-                            <div class="card-header p-0 row">
-                                <div class="col-auto p-2">
-                                    <h3>
-                                        Disable text wrapping
-                                    </h3>
-                                    <div class="text-secondary">
-                                        Data de publicação: Hoje
-                                    </div>
-                                </div>
-                                <div class="col text-end p-0">
-                                    <i class="bi bi-bookmark-heart-fill h4" style="color: rgb(255, 74, 74)"></i>
-                                </div>
-                            </div>
-                            <div class="card-body border-bottom row p-1">
-                                <p>
-                                    If you don’t want the button text to wrap, you can add the .text-nowrap class to
-                                    the button. In Sass, you can set $btn-white-space: nowrap to disable text wrapping
-                                    for each button.Button tagsThe .btn classes are designed to be used with the button element.
-                                    However, you can also use these classes on a or input elements (though some browsers may
-                                    apply a slightly different rendering).When using button classes on a elements that are
-                                    used to trigger in-page functionality (like collapsing content), rather than linking
-                                    to new pages or sections within the current page, these links should be given a
-                                    role="button" to appropriately convey their purpose to assistive technologies such
-                                    as screen readers.
-                                </p>
-                            </div>
-                            <div class="py-2 px-2 row justify-content-end">
-                                <a href="post.html" class="btn btn-outline-success col col-auto">Ler mais <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="card col-lg-9 mx-auto shadow-sm mb-4 row">
-                        <div class="container">
-                            <div class="card-header p-0 row">
-                                <div class="col-auto p-2">
-                                    <h3>
-                                        Disable text wrapping
-                                    </h3>
-                                    <div class="text-secondary">
-                                        Data de publicação: Hoje
-                                    </div>
-                                </div>
-                                <div class="col text-end p-0">
-                                    <i class="bi bi-bookmark-heart-fill h4" style="color: rgb(255, 74, 74)"></i>
-                                </div>
-                            </div>
-                            <div class="card-body border-bottom row p-1">
-                                <p>
-                                    If you don’t want the button text to wrap, you can add the .text-nowrap class to
-                                    the button. In Sass, you can set $btn-white-space: nowrap to disable text wrapping
-                                    for each button.Button tagsThe .btn classes are designed to be used with the button element.
-                                    However, you can also use these classes on a or input elements (though some browsers may
-                                    apply a slightly different rendering).When using button classes on a elements that are
-                                    used to trigger in-page functionality (like collapsing content), rather than linking
-                                    to new pages or sections within the current page, these links should be given a
-                                    role="button" to appropriately convey their purpose to assistive technologies such
-                                    as screen readers.
-                                </p>
-                            </div>
-                            <div class="py-2 px-2 row justify-content-end">
-                                <a href="post.html" class="btn btn-outline-success col col-auto">Ler mais <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>                        
-                    </div>
-
                     <footer class="row bg-light py-2 border-top mt-auto">
                         <div class="container">
                             <p class="text-muted">
-                                Site footer.
+                                2021 - @Todos os direitos reservados.
                             </p>
                         </div>
                     </footer>                
                 </div>
 
             </div>
+
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
