@@ -22,7 +22,8 @@
     height: 64px;
     width: 64px;
     background-size: cover;
-    border-radius: 6px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
 }
 
 .navbar-dark {
